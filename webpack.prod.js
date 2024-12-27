@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // webpack.config.js
 /* 
 This is a Webpack configuration file that contains all details
