@@ -10,7 +10,64 @@ header {
   padding-bottom: 5px;
 }
 
+button {
+  cursor: pointer;
+}
+
 button:disabled {
   background-color: darkred;
   color: white;
 }
+
+.nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav a:hover,
+.dropdown:hover .drop-btn,
+.drop-btn:focus {
+  background-color: red;
+}
+
+/* ----- All dropdown stuff below ----- */
+
+.dropdown {
+  display: inline-block;
+}
+
+/* .dropdown .drop-btn {
+  font-size: 16px;   
+  border: none;
+  outline: none; 
+  color: white;
+  padding: 14px 16px; 
+  background-color: inherit; 
+  font-family: inherit;
+  margin: 0;
+} */
+
+.drop-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.drop-content a {
+  float: none;
+  color: black;
+  padding: 5px 14px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drop-content.visible {
+  display: block;
+}
+
+/* ----- End of dropdown stuff ----- */
