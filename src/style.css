@@ -2,7 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(221, 212, 183);
+  background-color: rgb(139, 133, 114);
   margin: 30px;
 }
 
@@ -27,7 +27,8 @@ button:disabled {
 .nav a:hover,
 .dropdown:hover .drop-btn,
 .drop-btn:focus {
-  background-color: red;
+  background-color: rgb(199, 54, 54);
+  color: white
 }
 
 /* ----- All dropdown stuff below ----- */
@@ -35,17 +36,6 @@ button:disabled {
 .dropdown {
   display: inline-block;
 }
-
-/* .dropdown .drop-btn {
-  font-size: 16px;   
-  border: none;
-  outline: none; 
-  color: white;
-  padding: 14px 16px; 
-  background-color: inherit; 
-  font-family: inherit;
-  margin: 0;
-} */
 
 .drop-content {
   display: none;
@@ -71,3 +61,57 @@ button:disabled {
 }
 
 /* ----- End of dropdown stuff ----- */
+
+/* ----- Start of carousel stuff ----- */
+#content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 800px;
+
+}
+
+#carousel-frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: rgb(138, 121, 89);
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.carousel-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  translate: 0px;
+  transition: ease 0.5s;
+}
+
+.carousel-track {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+
+}
+
+.carousel-dot {
+  display: block;
+  border: #ce2d2d;
+  width: 16px;
+  height: 16px;
+  border-radius: 24px;
+  margin: 4px;
+}
+
+.carousel-dot.selected {
+  background-color: #6ebeff;
+}

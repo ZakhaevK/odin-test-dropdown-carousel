@@ -1,5 +1,5 @@
 import "./style.css";
-import { initialiseDropdown } from "./content.js";
+import { initialiseDropdown } from "./dropdownHelper.js";
 
 const dropDown = document.getElementById("nav1")
 
