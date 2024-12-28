@@ -84,7 +84,7 @@ button:disabled {
   overflow: hidden;
 }
 
-.carousel-img {
+#carousel-img {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -92,7 +92,7 @@ button:disabled {
   transition: ease 0.5s;
 }
 
-.carousel-track {
+#carousel-track {
   position: absolute;
   bottom: 0px;
   display: flex;
