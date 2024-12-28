@@ -41,12 +41,11 @@ function initialiseArrows() {
 // Used by all functions affecting the dot, handles edge cases in user friendly way
 function selectDot(num) {
   resetImageTimer();
-
   dots[currentDot].classList.toggle("selected");
-  console.log(num);
-  if (num >= dots.length) { // Begins again at start if exceeding length
+
+  if (num >= dots.length) {
     currentDot = 0;
-  } else if (num < 0) { // Handles user arrow going back from dot 0
+  } else if (num < 0) {
     currentDot = dots.length - 1;
   } else {
     currentDot = num;
